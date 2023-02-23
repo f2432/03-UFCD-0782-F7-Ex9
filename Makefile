@@ -1,8 +1,8 @@
 a.out:
-	gcc exercicio8.c
+	gcc exercicio9.c
 
 clean:
-	rm exercicio8
+	rm exercicio9
 
 test: a.out
 	bash test.sh
