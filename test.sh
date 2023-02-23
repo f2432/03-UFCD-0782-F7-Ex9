@@ -1,8 +1,8 @@
 echo "A executar os testes ..."
 echo
 
-saida=$(echo -e "20\npão\n5\nsumos\n3\nmanteiga\n5\n" | ./a.out)
-esperado="Compras feitas:\npão – 5 Euros\nsumos – 3 euros\nmanteiga – 5 euros\nTotal: 13 euros\nSobrou: 7 Euros"
+saida=$(echo -e "300\n5.1\n1.7\n" | ./a.out)
+esperado="O valor total da viagem é 26.01 Euros."
 
 if [ "$saida" != "$esperado" ]; then
     echo "Teste falhou: a saída do programa é diferente do esperado"
